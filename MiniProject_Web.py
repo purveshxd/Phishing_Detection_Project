@@ -1,10 +1,10 @@
+
 import pandas as pd
 import numpy as np
 import pickle
 import streamlit as st
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, accuracy_score, f1_score
-import nltk
 
 loaded_model = pickle.load(open('phishing.pkl','rb'))
 
@@ -20,6 +20,7 @@ predict_input_raw = [predict_input]
 result = loaded_model.predict(predict_input_raw)
 
 
+
 print(result)
 print("*"*30)
 if st.button("check"):
@@ -27,6 +28,3 @@ if st.button("check"):
         st.header('Phishing')
     if result==['good']:
         st.header('Not Phishing')
-    
-
-    
