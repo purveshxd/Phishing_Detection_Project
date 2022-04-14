@@ -5,7 +5,7 @@ import streamlit as st
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, accuracy_score, f1_score
 
-loaded_model = pickle.load(open('D:/Dev/MiniProject/phishing.pkl','rb'))
+loaded_model = pickle.load(open('phishing.pkl','rb'))
 
 st.title('Phishing Detection')
 
