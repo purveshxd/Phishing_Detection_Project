@@ -1,15 +1,9 @@
-from email import header
-from multiprocessing.sharedctypes import Value
-from turtle import color
-import click
-from idna import valid_contextj
 import pandas as pd
 import numpy as np
 import pickle
 import streamlit as st
 import sklearn
 import os
-# import nltk
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, accuracy_score, f1_score
 
